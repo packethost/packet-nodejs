@@ -1,0 +1,12 @@
+{
+    "name": "packet-api",
+    "version": "0.0.1",
+    "author": "Lucas Perez <lucas@packet.net>",
+    "description": "Packet API wrapper",
+    "main": "./lib/packet.js",
+    "dependencies": {
+        "request": "2.x"
+    },
+    "devDependencies": {
+    }
+}
