@@ -4,9 +4,10 @@ var Packet = require('../lib/packet'),
 
 var api = new Packet(config.apiKey);
 
-/*projects examples
+/*projects examples*/
 api.getProjects(false, false, function(err, data){
 });
+/*
 api.addProject({name:'testing nodejs'}, function(err, data) {
 });
 api.removeProject('82936f16-d78a-4978-a17f-56e745eb468e', function(err, res) {
