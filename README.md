@@ -9,6 +9,8 @@ For more info about the routes, please go to our [Api's documentation](https://w
 ```
 Packet = require('packet-nodejs');
 var api = new Packet('YOU API TOKEN HERE');
+//You can change your Token later on
+api.setApiToken('YOUR NEW TOKEN');
 ```
 
 ## Implemented Routes
