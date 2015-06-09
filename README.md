@@ -1,4 +1,4 @@
-# packet-nodejs [![Build Status](https://api.shippable.com/projects/556f654fedd7f2c052073017/badge?branchName=master)](https://app.shippable.com/projects/556f654fedd7f2c052073017/builds/latest)
+# Packet Nodejs [![Build Status](https://api.shippable.com/projects/556f654fedd7f2c052073017/badge?branchName=master)](https://app.shippable.com/projects/556f654fedd7f2c052073017/builds/latest)
 Is a nodejs library which helps you consume our api routes.  
 For more info about the routes, please go to our [Api's documentation](https://www.packet.net/api/api.html)
 
