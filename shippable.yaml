@@ -6,12 +6,17 @@ env:
     - secure: I14xUiTbRks33vayIb0ANqFdPOX+iy0yus5JX3sIEbUXsCzGVpf3+Jc2iWwjs9WNTEdzdIRGH9JJyyJLvz8IGkHv7HZo4PjrwFkfbO7wJwleHawdZY1rQe8jWg6luEBPZguexOgTus0DOjkL5TkTd4AukD/nW1UnN0WRm9c0hCcZcIebkwQBcHc/E380O3si4iEsMVueLlgyaa5VUqS+sYqYjaKMeg+T4cxNwOpFdFqlx0cESJMFrG5junpf33xojL5TwnuyTG3R3IYLfeEKfr/VqW/XJfe5AtcVK7Sg0EyZQ66UPpyvxpkFlm1fC+5A+dlydHUe/MOzSRv0k6sY2g==
     
 node_js:
-   - 0.10
+  - 0.12
+
+build_image: shippableimages/ubuntu1204_nodejs
 
 cache: true
 
 before_install: 
-  - npm install grunt grunt-cli
+  # activate the node.js version
+  - source ~/.nvm/nvm.sh && nvm install $SHIPPABLE_NODE_VERSION
+  - node --version
+  - npm install -g grunt-cli
   - npm install
 
 script:
