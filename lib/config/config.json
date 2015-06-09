@@ -1,7 +1,3 @@
 {
-	"apiEnvironments":{
-		"dev": "http://localhost:3000/",
-	    "lab": "https://lab.packet.net:8443/",
-	    "prod": "https://api.packet.net/"
-	}
+	"apiUrl": "https://api.packet.net"
 }
