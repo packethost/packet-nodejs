@@ -10,13 +10,12 @@ node_js:
 
 cache: true
 
-before_install: 
-  # activate the node.js version
-  - npm install -g grunt-cli
+before_install:
   - npm install
 
 script:
-  - grunt
+  - npm run lint
+  - npm test
 
 notifications:
    email: true
