@@ -1,3 +1,5 @@
+'use strict';
+// jshint ignore: start
 var nock = require('nock');
 var Packet = new require('../lib/packet');
 var uuid = require('node-uuid');
