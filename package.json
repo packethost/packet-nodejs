@@ -5,7 +5,7 @@
   "description": "Packet API wrapper",
   "main": "./lib/packet.js",
   "scripts": {
-    "lint": "jshint lib/**/*.js",
+    "lint": "jshint lib/*.js",
     "test": "mocha --reporter spec test"
   },
   "dependencies": {
