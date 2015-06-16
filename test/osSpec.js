@@ -1,8 +1,8 @@
+'use strict';
+
 var nock = require('nock');
 var Packet = new require('../lib/packet');
-var uuid = require('node-uuid');
 var apiConfig = require('../lib/config/config.json');
-var currentEnv = 'dev';
 var expect = require('chai').expect;
 var api = new Packet('');
 describe('Client Operating Systems Methods', function() {
@@ -16,6 +16,7 @@ describe('Client Operating Systems Methods', function() {
                 {slug:'coreos_stable'}
                 ]});
             api.getOperatingSystems(function(err, data) {
+                expect(err).to.equal(null);
                 expect(data).to.deep.equal({oses:[{slug:'ubuntu_14_04'}, {slug:'coreos_stable'}]});
                 done();
                 mock.done();

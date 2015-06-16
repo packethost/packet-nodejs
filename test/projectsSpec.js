@@ -1,3 +1,5 @@
+'use strict';
+
 var nock = require('nock');
 var Packet = new require('../lib/packet');
 var uuid = require('node-uuid');
@@ -15,6 +17,7 @@ describe('Client Projects Methods', function() {
             .intercept('/projects/', 'GET')
             .reply(200, {projects:[{name:'project 1'}]});
             api.getProjects(false, false, function(err, data) {
+                expect(err).to.equal(null);
                 expect(data.projects).to.deep.equal([{name:'project 1'}]);
                 done();
                 mock.done();
@@ -25,6 +28,7 @@ describe('Client Projects Methods', function() {
             .intercept('/projects/' + projectId + '/', 'GET')
             .reply(200, {name:'project 1'});
             api.getProjects(projectId, false, function(err, data) {
+                expect(err).to.equal(null);
                 expect(data).to.deep.equal({name:'project 1'});
                 done();
                 mock.done();

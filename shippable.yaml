@@ -6,11 +6,12 @@ node_js:
 cache: true
 
 before_install: 
-  - npm install -g grunt-cli
   - npm install
 
 script:
-  - grunt
+  - npm run cs
+  - npm run lint
+  - npm test
 
 notifications:
    email: true
