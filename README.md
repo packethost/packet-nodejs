@@ -21,6 +21,7 @@ api.setApiToken('YOUR NEW TOKEN');
 * [Plans](#plans)
 * [Memberships](#memberships)
 * [Invitations](#invitations)
+* [Ips](#Ips)
 * [Transfers](#transfer)
 * [Users](#user)
 * [Events](#events)
@@ -60,6 +61,12 @@ To make the documentation simpler and easier to read I'll put here comments on g
 ### Invite To Project
 `api.inviteToProject(id, user, callback);`
 
+### Request more IPs for a single project
+`api.transferProject(id, request, callback);`
+
+### Get Project's IP Reservations
+`api.getProjectIpReservations(id, parameters, callback);`
+
 ### Devices
 #### Parameters
 `projectId` Project's ID.  
@@ -83,6 +90,12 @@ To make the documentation simpler and easier to read I'll put here comments on g
 
 ### Device Actions
 `api.deviceAction(id, action, callback);`
+
+### Assign IP to Device
+`api.assignIp(id, ip, callback);`
+
+### Device Traffic
+`api.getDeviceTraffic(id, parameters, callback);`
 
 ### Facilities
 #### Parameters
@@ -125,6 +138,15 @@ To make the documentation simpler and easier to read I'll put here comments on g
 #### Remove invitation
 `api.removeInvitation(id, callback);`
 
+### Ips
+#### Parameters
+`id` Ip's ID.  
+`callback` Callback Function used to return the api's response.  
+#### Get a single Ip
+`api.getIp(id, callback);`
+#### Remove invitation
+`api.removeIp(id, callback);`
+
 ### Transfer
 #### Parameters
 `id` Membership's ID  
@@ -138,12 +160,10 @@ To make the documentation simpler and easier to read I'll put here comments on g
 
 ### User
 #### Parameters
-`id` User's ID  
 `user` User object  
 `callback` Callback Function used to return the api's response.  
-#### Get Users
-**Note:** Leaving *id* as false will return all the users available to the logged user,
-`àpi.getUsers(id, callback);`
+#### Get User
+`api.getUser(callback);`
 #### Update current user
 `api.updateCurrentUser(user, callback);`
 
