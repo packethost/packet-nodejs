@@ -36,5 +36,27 @@ describe('Client Devices Methods', function() {
                 mock.done();
             });
         });
+        it('should get a single device', function(done) {
+            var mock = nock(apiConfig.apiUrl)
+            .intercept('/devices/' + deviceId + '/', 'GET')
+            .reply(200, {name:'device 1'});
+            api.getDevices(false, deviceId, false, function(err, data) {
+                expect(err).to.equal(null);
+                expect(data).to.deep.equal({name:'device 1'});
+                done();
+                mock.done();
+            });
+        });
+        it('should get a device traffic', function(done) {
+            var mock = nock(apiConfig.apiUrl)
+            .intercept('/devices/' + deviceId + '/traffic', 'GET')
+            .reply(200, {});
+            api.getDeviceTraffic(deviceId, false, function(err, data) {
+                expect(err).to.equal(null);
+                expect(data).to.deep.equal({});
+                done();
+                mock.done();
+            });
+        });
     });
 });

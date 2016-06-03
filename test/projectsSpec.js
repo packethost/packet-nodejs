@@ -34,5 +34,16 @@ describe('Client Projects Methods', function() {
                 mock.done();
             });
         });
+        it('should get ips of single project', function(done) {
+            var mock = nock(apiConfig.apiUrl)
+            .intercept('/projects/' + projectId + '/ips', 'GET')
+            .reply(200, {ips:[]});
+            api.getProjectIpReservations(projectId, false, function(err, data) {
+                expect(err).to.equal(null);
+                expect(data).to.deep.equal({ips:[]});
+                done();
+                mock.done();
+            });
+        });
     });
 });
