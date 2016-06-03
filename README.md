@@ -62,7 +62,7 @@ To make the documentation simpler and easier to read I'll put here comments on g
 `api.inviteToProject(id, user, callback);`
 
 ### Request more IPs for a single project
-`api.transferProject(id, request, callback);`
+`api.requestIp(id, request, callback);`
 
 ### Get Project's IP Reservations
 `api.getProjectIpReservations(id, parameters, callback);`
