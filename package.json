@@ -1,5 +1,5 @@
 {
-  "name": "packet-api",
+  "name": "packet-nodejs",
   "version": "0.0.1",
   "author": "Lucas Perez <lucas@packet.net>",
   "description": "Packet API wrapper",
@@ -15,7 +15,7 @@
   },
   "contributors": [
     {
-      "name": "Enzo Hernan NIcolorich",
+      "name": "Enzo Hernan Nicolorich",
       "url": "https://github.com/dkenzox"
     }
   ],
