@@ -1,4 +1,5 @@
 # Packet Nodejs [![Build Status](https://api.shippable.com/projects/556f654fedd7f2c052073017/badge?branchName=master)](https://app.shippable.com/projects/556f654fedd7f2c052073017/builds/latest)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpackethost%2Fpacket-nodejs.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpackethost%2Fpacket-nodejs?ref=badge_shield)
 Is a nodejs library which helps you consume our api routes.  
 For more info about the routes, please go to our [Api's documentation](https://www.packet.net/api/api.html)
 
@@ -213,3 +214,7 @@ To make the documentation simpler and easier to read I'll put here comments on g
 `api.updateEmail(id, email, callback);`
 #### Remove an email
 `api.removeEmail(id, callback);`
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpackethost%2Fpacket-nodejs.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpackethost%2Fpacket-nodejs?ref=badge_large)
