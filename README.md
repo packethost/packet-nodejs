@@ -1,6 +1,6 @@
 # Packet Nodejs [![Build Status](https://api.shippable.com/projects/556f654fedd7f2c052073017/badge?branchName=master)](https://app.shippable.com/projects/556f654fedd7f2c052073017/builds/latest)
-Is a nodejs library which helps you consume our api routes.  
-For more info about the routes, please go to our [Api's documentation](https://www.packet.net/api/api.html)
+Is a nodejs library which helps you consume Packet's API routes.  
+For more info about the routes, please visit our [API documentation](https://www.packet.com/developers/api/)
 
 ## Installation
 `npm install packet-nodejs` or `git clone git@github.com:packethost/packet-nodejs.git`
