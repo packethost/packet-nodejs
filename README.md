@@ -1,7 +1,8 @@
 # Packet Nodejs [![Build Status](https://api.shippable.com/projects/556f654fedd7f2c052073017/badge?branchName=master)](https://app.shippable.com/projects/556f654fedd7f2c052073017/builds/latest)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpackethost%2Fpacket-nodejs.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpackethost%2Fpacket-nodejs?ref=badge_shield)
-Is a nodejs library which helps you consume our api routes.  
-For more info about the routes, please go to our [Api's documentation](https://www.packet.net/api/api.html)
+
+A nodejs library which helps you consume Equinix Metal api routes.  
+For more info about the routes, please go to our [Api's documentation](https://metal.equinix.com/developers/api/)
 
 ## Installation
 `npm install packet-nodejs` or `git clone git@github.com:packethost/packet-nodejs.git`
