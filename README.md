@@ -87,7 +87,7 @@ To make the documentation simpler and easier to read I'll put here comments on g
 `api.getProjects(projectId, id, parameters, callback);`
 
 #### Add Devices
-`api.getDevices(projectId, device, callback);`
+`api.getDevices(projectId, id, device, callback);`
 
 #### Update Devices
 `api.updateDevice(id, device, callback);`
